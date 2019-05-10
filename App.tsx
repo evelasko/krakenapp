@@ -1,11 +1,13 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import User from './src/components/User';
 
 export default class App extends React.Component {
+
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+        <User name="Jessica Doe" email="hello@jessica.com" isLoading={false}/>
       </View>
     );
   }
